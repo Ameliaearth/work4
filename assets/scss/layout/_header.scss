@@ -1,4 +1,39 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+/*header-1*/
+.header-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
+.nav-1{
+  li{
+    padding: 25px 0;
+  }
+  a{
+    color:#fff;
+    text-decoration:none;
+  }
+  &:hover{
+    :hover{
+      color:#000;
+    }
+  }
+}
+/*logo*/
+h1 a{
+  background-image: url(https://drive.google.com/uc?export=view&id=1fo7VTEdXoQ-DMxR2GObg4LkVMlD2S7VK);
+  display: block;
+  width: 80px;
+  height: 48.57px;
+  text-indent: 25em;
+  overflow: hidden;
+  white-space: nowrap;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+  
+  

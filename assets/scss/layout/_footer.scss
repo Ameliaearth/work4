@@ -1,4 +1,94 @@
+/*footer*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+    padding-top: 48px;
+}
+.d-flex{
+    display: flex;
+}
+.mr-48{
+    margin-right: 48px;
+}
+.list-8{
+    margin-bottom: 8px;
+}
+.box-4{
+    margin-top: 35.98px;
+}
+.list-9{
+    margin-bottom: 32px;
+}
+.mr-22{
+    margin-right: 16px;
+}
+.pt-1{
+    display: flex;
+    align-self:center
+}
+.area-3{
+    padding-bottom: 32px;
+}
+.fs-14{
+    font-size: 14px;
+}
+
+/*jcsb*/
+.eara-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list-10>a>img{
+    width: 48px;
+    height: 48px;
+}
+.mr-32{
+    margin-right: 32px;
+}
+/*sub*/
+.sub{
+    border-bottom:1px solid #fff;
+}
+.nav-4{
+    display: flex;
+    justify-content: space-around;
+}
+/*:hover*/
+.trs-cor:hover{
+    transition: all 1s ease;
+    color:#000;
+}
+.list-10>a>img:hover{
+    transform: scale(1.1);
+}
+
+
+.nav-2{
+  justify-content: space-between;
+  align-self: flex-start;
+}
+.box-3{
+  display: none;
+}
+.d-flex{
+  display: flex;
+}
+.list-1{
+  color:#fff;
+  text-decoration:none;
+}
+.fs-36{
+  font-size: 36px;
+}
+.header-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
