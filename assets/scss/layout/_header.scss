@@ -1,15 +1,12 @@
-/*header-1*/
 .header-1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
 }
 .nav-1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   li{
     padding: 25px 0;
   }

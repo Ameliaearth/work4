@@ -8,34 +8,33 @@
 }
 .footer{
     padding-top: 48px;
-}
-.d-flex{
+    .d-flex{
     display: flex;
-}
-.mr-48{
-    margin-right: 48px;
-}
-.list-8{
-    margin-bottom: 8px;
+  }
 }
 .box-4{
     margin-top: 35.98px;
+    li{
+      display: flex;
+      align-self:center;
+    }
+    .list-8{
+      margin-bottom: 8px;
+  }
+    .list-9{
+      margin-bottom: 32px;
+  }
 }
-.list-9{
-    margin-bottom: 32px;
-}
+
+
 .mr-22{
     margin-right: 16px;
 }
-.pt-1{
-    display: flex;
-    align-self:center
+.mr-48{
+  margin-right: 48px;
 }
 .area-3{
     padding-bottom: 32px;
-}
-.fs-14{
-    font-size: 14px;
 }
 
 /*jcsb*/
@@ -44,10 +43,14 @@
     justify-content: space-between;
     align-items: flex-start;
 }
-
-.list-10>a>img{
+.list-10{
+  img{
     width: 48px;
     height: 48px;
+    &:hover{
+      transform: scale(1.1);
+  }
+}
 }
 .mr-32{
     margin-right: 32px;
@@ -65,27 +68,18 @@
     transition: all 1s ease;
     color:#000;
 }
-.list-10>a>img:hover{
-    transform: scale(1.1);
-}
-
 
 .nav-2{
   justify-content: space-between;
   align-self: flex-start;
+    a{
+      color:#fff;
+  text-decoration:none;
+    }
 }
-.box-3{
-  display: none;
-}
+
 .d-flex{
   display: flex;
-}
-.list-1{
-  color:#fff;
-  text-decoration:none;
-}
-.fs-36{
-  font-size: 36px;
 }
 .header-1{
   display: flex;

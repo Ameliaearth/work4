@@ -1,6 +1,7 @@
 
-@import './reset.scss';
 @import './variable.scss';
+@import './base.scss';
+@import './reset.scss';
 
 /*layout*/
 @import './layout/header.scss';
@@ -10,3 +11,6 @@
 @import './pages/index.scss';
 @import './pages/map.scss';
 @import './pages/qa.scss';
+
+
+
