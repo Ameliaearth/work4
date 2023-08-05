@@ -6,24 +6,137 @@
   'opsz' 20
 }
 
+@mixin pad{
+  @media(max-width:768px){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media(max-width:375px){
+    @content;
+  }
+}
+
 
 .main{
   padding-top: 96px;
   padding-bottom: 80px;
+  @include pad{
+    width: 768px;
+  }
+  @include mobile{
+  padding-top: 40px;
+  padding-bottom: 64px;
+  }
   h2{
     font-weight: 600;
     font-size: 48px;
     border-left:8px solid #9F1213;
     padding-left:16px;
     margin-bottom: 32px;
+    @include pad{
+      font-size: 24px;
+    }
   }
   label{
     font-size: 24px;
     margin-right: 16px;
+    @include mobile{
+      font-size: 16px;
+      margin-right: 8px;
+    }
   }
   select{
     padding-top: 6px;
     padding-bottom: 6px;
-    width:25%;
+    margin-bottom: 40px;
+    width: 25%;
+    @include pad{
+      width: 50%;
+    }
+    @include mobile{
+      width: 36%;
+    }
   }
+}
+.content-1{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  h3{
+    font-size: 24px;
+    padding: 8px 0;
+    padding-left: 24px;
+  }
+  .mr-20{
+    margin-right: 20px;
+  }
+  .title-1{
+    border:1px solid #CFCFCF;
+      img{
+        width: 414px;
+        height: 224px;
+        @include mobile{
+          width: 348px;
+        }
+      }
+    }
+  .rwd-mr-20{
+    @include pad{
+      margin-right: 0;
+    }
+  }
+  .rwd-mr20{
+    @include pad{
+      margin-right: 20px;
+    }
+  }
+}
+
+.list-1{
+  border:1px solid #CFCFCF;
+  padding: 16px 0;
+  padding-left: 12px;
+  li{
+    display: flex;
+    .fs-20{
+      font-size: 20px;
+    }
+    span{
+      margin-right: 8px;
+    }
+    .pr-24{
+      padding-right: 12px;
+    }
+  }
+}
+.item-1{
+  @include pad{
+    width: 360px;
+  }
+  @include mobile{
+    width: 348px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box-1{
+    padding: 16px 0;
+    text-align:center;
+    background: #000;
+    border:1px solid #000;
+    margin-bottom: 48px;
+    @include mobile{
+      margin-bottom: 24px;
+    }
+    &:hover{
+      background: #CFCFCF;
+      transition: all 1s ease;
+      cursor:pointer;
+    }
+  a{
+    font-size: 19px;
+  }
+}
 }

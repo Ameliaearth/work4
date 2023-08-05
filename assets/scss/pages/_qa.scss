@@ -1,0 +1,60 @@
+@mixin pad{
+    @media(max-width:768px){
+      @content;
+    }
+}
+@mixin mobile{
+    @media(max-width:375px){
+      @content;
+    }
+}
+
+
+
+.aside{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    text-align:left;
+    @include mobile{
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+    .max-w{
+        max-width: 70%;
+        @include pad{
+            max-width: 95%;
+        }
+        @include mobile{
+            max-width: 100%;
+        }
+    }
+    h2{
+        font-size: 48px;
+        border-left:8px solid #9F1213;
+        padding-left: 16px;
+        margin-bottom: 32px;
+        font-weight: 800;
+        @include mobile{
+            font-size: 24px;
+        }
+    }
+    h3{
+        font-size: 24px;
+        margin-bottom: 24px;
+        font-weight: 600;
+    }
+}
+ 
+.list-3{
+    h4{
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    p{
+        font-size: 16px; 
+    }
+}
+.mb-32{
+    margin-bottom: 32px;
+}

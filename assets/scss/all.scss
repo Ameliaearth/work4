@@ -1,7 +1,7 @@
 
 @import './variable.scss';
-@import './base.scss';
 @import './reset.scss';
+@import './base.scss';
 
 /*layout*/
 @import './layout/header.scss';
@@ -14,3 +14,11 @@
 
 
 
+
+
+/*字體的連結是乎吃不到樣式
+A：
+這是因為你在 all.scss 的 base 跟 reset 檔案引入順序有誤，所以 base 設定的字體被 reset 蓋過去囉，修改為以下順序就可以了～
+@import './reset.scss';
+@import './base.scss';
+另外提醒 all.scss 的引入順序等同樣式設定順序，所以需特別留意檔案的引入順序是否正確哦*/
