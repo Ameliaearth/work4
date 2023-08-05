@@ -12,8 +12,6 @@
 
 
 .aside{
-    padding-top: 96px;
-    padding-bottom: 80px;
     text-align:left;
     @include mobile{
         padding-top: 40px;
@@ -33,7 +31,6 @@
         border-left:8px solid #9F1213;
         padding-left: 16px;
         margin-bottom: 32px;
-        font-weight: 800;
         @include mobile{
             font-size: 24px;
         }
@@ -41,13 +38,13 @@
     h3{
         font-size: 24px;
         margin-bottom: 24px;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
  
 .list-3{
     h4{
-        font-weight: 700;
+        font-weight: 500;
         font-size: 20px;
         margin-bottom: 8px;
     }

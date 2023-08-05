@@ -1,12 +1,14 @@
 
-/*color*/
+
 $primary:#AA0601;
+$padding-t:96px;
+$padding-b:80px;
+$font-w6:600;
 
 
 
 
-
-/*color*/
 .bg-r{background: $primary;}
-
-
+.pt-96{padding-top: $padding-t;}
+.pb-80{padding-bottom: $padding-b;}
+.fw-600{font-weight: $font-w6;}

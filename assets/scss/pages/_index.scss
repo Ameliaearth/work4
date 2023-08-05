@@ -20,8 +20,6 @@
 
 
 .main{
-  padding-top: 96px;
-  padding-bottom: 80px;
   @include pad{
     width: 768px;
   }
@@ -30,7 +28,6 @@
   padding-bottom: 64px;
   }
   h2{
-    font-weight: 600;
     font-size: 48px;
     border-left:8px solid #9F1213;
     padding-left:16px;
