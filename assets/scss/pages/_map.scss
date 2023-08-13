@@ -7,6 +7,7 @@
   'opsz' 20
 }
 
+
 @mixin pad{
     @media(max-width:768px){
       @content;
@@ -17,114 +18,95 @@
       @content;
     }
 }
-
-.section{
-  @include mobile{
-    padding-top: 40px;
-    padding-bottom: 64px;
-    }
-  h2{
-    font-size: 48px;
-    border-left:8px solid #9F1213;
-    padding-left: 16px;
-    margin-bottom: 33px;
-    @include mobile{
-        font-size: 24px;
-    }
-  }
-  label{
-    font-weight: 700;
-    font-size: 24px;
-    margin-right: 16px;
-    @include mobile{
-        font-size: 16px;
-    }
-  }
-  select{
-    font-size: 18px;
-    padding: 6px 0;
-    width: 50%;
-    @include mobile{
-        width: 70%;
-    }
-  }
-}
-.content-2{
-    margin-top: 40px;
-    display: flex;
-    @include pad{
-        flex-direction:column;
-        align-items: center;
-    }
+@media (max-width: 992px) {
     .item-2{
-        margin-bottom: 24px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 26px;
+      }
+    .content-2{
+        flex-direction: column;
+        margin-left: -24px;
+    }
+}
+@media (max-width: 552px) {
+    .item-2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+}
+
+
+
+
+.wrap .content-2{
+    display: flex;
+    justify-content: center;
+}
+.section{
+    margin: 0 auto;
+    h2{
+        border-left:8px solid #9F1213;
+        font-weight: 600;
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+    label{
+        font-size: 24px;
+        margin-right: 16px;
+    }
+    select{
+        padding: 6px 0 6px 12px;
+        width: 25%;
+        margin-bottom: 40px;
+    }
+}
+.item-2{
+    display: flex;
+    flex-direction: column;
+    @include mobile{
+        flex-direction: column;
+    }
+    img{
+        max-width: 526px;
+        height: 224px;
         @include pad{
-            margin-right: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            width: 337px;
         }
-        @include mobile{
-            flex-direction:column;
-            margin-right:0;
-        }
+    }
+    .box-6{
+        max-width: 526px;
         h3{
             border:1px solid #CFCFCF;
             font-size: 24px;
-            padding: 8px 0;
-            padding-left: 24px;
+            padding: 8px 0 8px 24px;
         }
-        img{
-            width: 526px;
-            height: 224px;
-            @include pad{
-                width: 337px;
-            }
-            @include mobile{
-                flex-direction:column;
-                width: 348px;
-            }
-        }
-    }
-    .mr-24{
-        margin-right: 24px;
-        @include mobile{
-            margin-right: 0;
-        }
-    }
-
-
-    .list-2{
-        border:1px solid #CFCFCF;
-        padding: 16px 0;
-        padding-left: 24px;
-        li{
-            display: flex;
-            span{
-                margin-right: 8px;
-            }
-            .mb-8{
-                margin-bottom: 8px;
-            }
-            .fs-20{
-                font-size: 20px;
-            }
-            .mr-24{
-                margin-right: 24px;
-            }
+        @include pad{
+            width: 337px;
         }
     }
 }
-.map{
-    iframe{
-        width: 746px;
-        height: 414px;
-        @include pad{
-            width: 696px;
+.list-2{
+    border:1px solid #CFCFCF;
+    padding: 16px 0 16px 24px;
+    li{
+        display: flex;
+        span{
+            width: 18px;
+            height: 18px;
+            margin-right: 11px;
         }
-        @include mobile{
-            width: 348px;
-            height: 208px;
+        p{
+            font-size: 20px;
         }
     }
+}
+iframe{
+    width: 745px;
+    height: 414px;
+    margin-left: 24px;
+    @include pad{
+        width: auto;
+      }
 }

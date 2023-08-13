@@ -6,11 +6,32 @@
   'opsz' 48
 }
 
+@mixin pad{
+  @media(max-width:768px){
+    @content;
+  }
+}
 @mixin mobile{
   @media(max-width:375px){
     @content;
   }
 }
+@media (max-width: 992px) {
+  .box-5{
+    img{
+      width: 24px;
+      height: 24px;
+      margin-right: -10px;
+    }
+  }
+  .box-3{
+    li{
+      margin-right: -84px;
+      
+    }
+  }
+}
+
 
 .mr-32{
   margin-right: 32px;
@@ -28,7 +49,7 @@
     img{
       width: 48px;
       height: 48px;
-      @include mobile{
+      @include pad{
         width: 24px;
         height: 24px;
       }
@@ -42,13 +63,20 @@
 .footer{
   padding-top: 60.02px;
   padding-bottom: 32px;
-  @include mobile{
+  @include pad{
     padding-top:24px 0;
+    padding-left:36px;
+    padding-right:36px;
+  }
+  @include mobile{
+    padding-top: 24px;
+    padding-left: 13px;
+    padding-right: 14px;
   }
   .box-3{
     display: flex;
     margin-bottom: 35.98px;
-    @include mobile{
+    @include pad{
       display:none;
     }
     li{
@@ -66,13 +94,13 @@
       align-items: center;
       a,span{
         font-size: 36px;
-        @include mobile{
+        @include pad{
           font-size: 16px;
         }
       }
       span{
         margin-right: 22px;
-        @include mobile{
+        @include pad{
           margin-right: 8px;
         }
       }
@@ -95,7 +123,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include mobile{
+  @include pad{
     align-items: flex-start;
     flex-direction:column;
   }
@@ -104,7 +132,7 @@
   }
   ul{
     display: flex;
-    @include mobile{
+    @include pad{
       flex-direction:column;
     }
     a{
